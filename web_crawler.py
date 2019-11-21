@@ -2,60 +2,30 @@ from html.parser import HTMLParser
 import urllib
 import urllib.request
 import time
+from flask import Flask
+from flask_sqlalchemy import SQLAlchemy
+app = Flask(__name__)
+
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'
+
+db = SQLAlchemy(app)
 
 MASTER_OF_IT_COURSE_LIST = 'https://my.uq.edu.au/programs-courses/program_list.html?acad_prog=5581&year=2020'
 
 
-class Course(object):
+class CourseEntity(db.Model):
+    code = db.Column(db.String(8), primary_key=True)
+    type = db.Column(db.String(1), nullable=False)
+    name = db.Column(db.String(100), nullable=False)
+    unit = db.Column(db.Integer, nullable=False)
+    link = db.Column(db.String(150), nullable=False)
+    prereq = db.Column(db.String(200))
+    incompatible = db.Column(db.String(200))
+    semester = db.Column(db.String(50), nullable = Flask)
 
-    def __init__(self, code):
-        self._code = code
-        self._type = None
-        self._name = None
-        self._weight = None
-        self._link = None
-        self._prereq = None
-        self._incompatible = None
-        self._semester = []
-
-    def get_code(self):
-        return self._code
-
-    def set_name(self, name):
-        self._name = name
-
-    def get_name(self):
-        return self._name
-
-    def set_unit(self, unit):
-        self._weight = unit
-
-    def get_unit(self):
-        return self._weight
-
-    def set_link(self, link):
-        self._link = link
-
-    def get_link(self):
-        return self._link
-
-    def set_type(self, type):
-        self._type = type
-
-    def get_type(self):
-        return self._type
-
-    def set_prereq(self, prereqs):
-        self._prereq = prereqs
-
-    def get_prereq(self):
-        return self._prereq
-
-    def set_incompatible(self, incompatible):
-        self._incompatible = incompatible
-
-    def get_incompatible(self):
-        return self._incompatible
+    def __repr__(self):
+        return f"Course('{self.code}','{self.name}', '{self.type}','{self.unit}'\
+        ,'{self.link}','{self.prereq}','{self.incompatible}','{self.semester}')"
 
 
 class LinkParser(HTMLParser):
@@ -127,13 +97,13 @@ def find_course_type(text, code):
     part_d_index = text.find("<h2>Part D - Other Electives</h2>")
     code_position = text.find(code)
     if part_a_index < code_position < part_b_index:
-        return "A"
+        return "Part A"
     elif part_b_index < code_position < part_c_index:
-        return "B"
+        return "Part B"
     elif part_c_index < code_position < part_d_index:
-        return "C"
+        return "Part C"
     elif code_position > part_d_index:
-        return "D"
+        return "Part D"
 
 
 def find_prereq(course_page):
@@ -177,14 +147,14 @@ def find_offering_sem(course_page):
                 offering_sem.append(course_page[end_tag+1:start_tag])
             return offering_sem
 
-
-def main():
+def load_data():
+    db.create_all()
     text = str(find_content(MASTER_OF_IT_COURSE_LIST))
     course_links = find_links(text)
     courses = find_course(course_links)
 
     for code in courses:
-        unit = find_course_unit(text, code)
+        unit = int(find_course_unit(text, code))
         name = find_course_name(text, code)
         type = find_course_type(text, code)
 
@@ -192,27 +162,23 @@ def main():
         course_page = str(find_content(course_link))
         prereqs = find_prereq(course_page)
         incompatible = find_incompatible(course_page)
-        offerings = find_offering_sem(course_page)
-
-
-
-        #print(courses[code])
-        course = Course(code)
-        course.set_link(courses[code])
-        course.set_unit(unit)
-        course.set_name(name)
-        course.set_type(type)
-        course.set_prereq(prereqs)
-        course.set_incompatible(incompatible)
-
-        print(code, 'Unit: '+course.get_unit(), 'Course Name: '+course.get_name(),
-              'Course Type: '+course.get_type(), 'Course Link: '+course.get_link(),
-              'Prereq: '+course.get_prereq(), 'Incompatible: '+course.get_incompatible(),
-              'Offering Semester'+str(offerings))
-
+        offerings = ';'.join(find_offering_sem(course_page))
         time.sleep(3)
 
+        course = CourseEntity(code=code, type=type, name=name, unit=unit, link=course_link, prereq=prereqs,
+                              incompatible=incompatible, semester=offerings)
 
+        db.session.add(course)
+        db.session.commit()
+
+        course = CourseEntity.query.filter_by(code=code).all()
+        print(course)
+
+
+def main():
+    #load_data() data already loaded to database
+    course = CourseEntity.query.filter_by(code='TIMS7301').all()
+    print(course)
 
 
 if __name__ == "__main__":

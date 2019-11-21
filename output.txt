@@ -1,0 +1,669 @@
+CSSE7023 
+Unit: 2 
+Course Name: Advanced Software Engineering 
+Course Type: A 
+Course Link: https://my.uq.edu.au/programs-courses/course.html?course_code=CSSE7023&year=2020 
+Prereq: CSSE7030 
+Incompatible: COMP2500 or CSSE7908 or CSSE2002 
+Offering Semester: Semester 2, 2019; Semester 1, 2020; Semester 2, 2020
+
+
+CSSE7030 
+Unit: 2 
+Course Name: Introduction to Software Engineering 
+Course Type: A 
+Course Link: https://my.uq.edu.au/programs-courses/course.html?course_code=CSSE7030&year=2020 
+Prereq: None 
+Incompatible: COMP1502 or CSSE1001 
+Offering Semester: Semester 2, 2019; Semester 1, 2020; Semester 2, 2020
+
+
+DECO7140 
+Unit: 2 
+Course Name: Introduction to Web Design 
+Course Type: A 
+Course Link: https://my.uq.edu.au/programs-courses/course.html?course_code=DECO7140&year=2020 
+Prereq: None 
+Incompatible: DECO1400 or IENV7961 or MMDS1400 or MMDS7961 
+Offering Semester: Semester 2, 2019; Semester 1, 2020; Semester 2, 2020
+
+
+DECO7180 
+Unit: 2 
+Course Name: Design Computing Studio 1 - Interactive Technology 
+Course Type: A 
+Course Link: https://my.uq.edu.au/programs-courses/course.html?course_code=DECO7180&year=2020 
+Prereq: DECO7140 
+Incompatible: DECO1800 or IENV1000 or IENV1801 or IENV7911 or MMDS1801 
+Offering Semester: Semester 2, 2019; Semester 2, 2020
+
+
+DECO7250 
+Unit: 2 
+Course Name: Human-Computer Interaction 
+Course Type: A 
+Course Link: https://my.uq.edu.au/programs-courses/course.html?course_code=DECO7250&year=2020 
+Prereq: DECO7140 or MMDS7961 or CSSE7030 
+Incompatible: COMP2506 or COMP3501 or COMP7904 or DECO2500 
+Offering Semester: Semester 1, 2020
+
+
+INFS7900 
+Unit: 2 
+Course Name: Introduction to Information Systems 
+Course Type: A 
+Course Link: https://my.uq.edu.au/programs-courses/course.html?course_code=INFS7900&year=2020 
+Prereq: None 
+Incompatible: INFS1200 or BISM3203 or BISM7206 
+Offering Semester: Semester 2, 2019; Semester 1, 2020; Semester 2, 2020
+
+
+INFS7903 
+Unit: 2 
+Course Name: Relational Database Systems 
+Course Type: A 
+Course Link: https://my.uq.edu.au/programs-courses/course.html?course_code=INFS7903&year=2020 
+Prereq: INFS7900 
+Incompatible: INFS2200 or BISM7206 or COMM7605 or MGTS7206 
+Offering Semester: Semester 2, 2019; Semester 2, 2020
+
+
+MATH7861 
+Unit: 2 
+Course Name: Discrete Mathematics 
+Course Type: A 
+Course Link: https://my.uq.edu.au/programs-courses/course.html?course_code=MATH7861&year=2020 
+Prereq: None 
+Incompatible: MATH1061 
+Offering Semester: Semester 2, 2019; Semester 1, 2020; Semester 1, 2020; Semester 2, 2020
+
+
+DECO7380 
+Unit: 2 
+Course Name: Design Computing Studio 3 - Proposal 
+Course Type: B 
+Course Link: https://my.uq.edu.au/programs-courses/course.html?course_code=DECO7380&year=2020 
+Prereq: None 
+Incompatible: CSSE3004 or CSSE3005 or CSSE7024 or CSSE7025 
+Offering Semester: Semester 1, 2020
+
+
+DECO7381 
+Unit: 2 
+Course Name: Design Computing Studio 3 - Build 
+Course Type: B 
+Course Link: https://my.uq.edu.au/programs-courses/course.html?course_code=DECO7381&year=2020 
+Prereq: CSSE7030 and DECO7140 and (DECO7250 or COMP7904 or INFS7900) 
+Incompatible: CSSE3004 or CSSE3005 or CSSE7024 or CSSE7025 
+Offering Semester: Semester 2, 2019; Semester 2, 2020
+
+
+DECO7860 
+Unit: 6 
+Course Name: Masters Thesis 
+Course Type: B 
+Course Link: https://my.uq.edu.au/programs-courses/course.html?course_code=DECO7860&year=2020 
+Prereq: Permission Head of School 
+Incompatible: IENV7941 
+Offering Semester: Semester 2, 2019; Semester 1, 2020; Semester 2, 2020
+
+
+DECO7861 
+Unit: 6 
+Course Name: Masters Thesis 
+Course Type: B 
+Course Link: https://my.uq.edu.au/programs-courses/course.html?course_code=DECO7861&year=2020 
+Prereq: At least #16 units completed towards program 
+Incompatible: IENV7941 
+Offering Semester: Semester 1, 2020
+
+
+DECO7862 
+Unit: 6 
+Course Name: Masters Thesis 
+Course Type: B 
+Course Link: https://my.uq.edu.au/programs-courses/course.html?course_code=DECO7862&year=2020 
+Prereq: At least #16 units completed towards program 
+Incompatible: IENV7941 
+Offering Semester: Semester 2, 2019; Semester 2, 2020
+
+
+ENGG7811 
+Unit: 2 
+Course Name: Research Methods 
+Course Type: B 
+Course Link: https://my.uq.edu.au/programs-courses/course.html?course_code=ENGG7811&year=2020 
+Prereq: None 
+Incompatible: None 
+Offering Semester: Semester 2, 2019; Semester 1, 2020; Semester 2, 2020
+
+
+COMP7308 
+Unit: 2 
+Course Name: Operating Systems Architecture 
+Course Type: C 
+Course Link: https://my.uq.edu.au/programs-courses/course.html?course_code=COMP7308&year=2020 
+Prereq: COMP7306 or CSSE7231 
+Incompatible: COMP3300 or COMP3301 or COMP7303 
+Offering Semester: Semester 2, 2019; Semester 2, 2020
+
+
+COMP7402 
+Unit: 2 
+Course Name: Compilers and Interpreters 
+Course Type: C 
+Course Link: https://my.uq.edu.au/programs-courses/course.html?course_code=COMP7402&year=2020 
+Prereq: COMP7505 
+Incompatible: COMP3401 or COMP4403 or CS320 or CS324 
+Offering Semester: Semester 1, 2020
+
+
+COMP7500 
+Unit: 2 
+Course Name: Advanced Algorithms & Data Structures 
+Course Type: C 
+Course Link: https://my.uq.edu.au/programs-courses/course.html?course_code=COMP7500&year=2020 
+Prereq: COMP7505 
+Incompatible: COMP4500 
+Offering Semester: Semester 2, 2019; Semester 2, 2020
+
+
+COMP7505 
+Unit: 2 
+Course Name: Algorithms & Data Structures 
+Course Type: C 
+Course Link: https://my.uq.edu.au/programs-courses/course.html?course_code=COMP7505&year=2020 
+Prereq: CSSE7023 and ( MATH7861 or MATH7501) 
+Incompatible: COMP2502 or COMP3506 
+Offering Semester: Semester 2, 2019; Semester 2, 2020
+
+
+COMP7702 
+Unit: 2 
+Course Name: Artificial Intelligence 
+Course Type: C 
+Course Link: https://my.uq.edu.au/programs-courses/course.html?course_code=COMP7702&year=2020 
+Prereq: CSSE7030 
+Incompatible: COMP3701 or COMP3702 or COMP7701 
+Offering Semester: Semester 2, 2019; Semester 2, 2020
+
+
+COMP7703 
+Unit: 2 
+Course Name: Machine Learning 
+Course Type: C 
+Course Link: https://my.uq.edu.au/programs-courses/course.html?course_code=COMP7703&year=2020 
+Prereq: CSSE7030 and MATH7501 and STAT7203 
+Incompatible: COGS4021 or COGS7021 or COMP3700 or COMP4702 or ELEC4700 or ELEC7701 
+Offering Semester: Semester 1, 2020
+
+
+COMS7003 
+Unit: 2 
+Course Name: Information Security 
+Course Type: C 
+Course Link: https://my.uq.edu.au/programs-courses/course.html?course_code=COMS7003&year=2020 
+Prereq: For COMS3000 prereq: CSSE2310;\nFor COMS7003 prereq: CSSE7231 
+Incompatible: For COMS3000 inc: COMS7003;\nFor COMS7003 inc: COMS3000 
+Offering Semester: Semester 2, 2019; Semester 2, 2020
+
+
+COMS7200 
+Unit: 2 
+Course Name: Computer Networks II 
+Course Type: C 
+Course Link: https://my.uq.edu.au/programs-courses/course.html?course_code=COMS7200&year=2020 
+Prereq: COMS7201 
+Incompatible: COMS4200 
+Offering Semester: Semester 2, 2019; Semester 2, 2020
+
+
+COMS7201 
+Unit: 2 
+Course Name: Computer Networks I 
+Course Type: C 
+Course Link: https://my.uq.edu.au/programs-courses/course.html?course_code=COMS7201&year=2020 
+Prereq: COMP7306 OR CSSE7231 
+Incompatible: COMS3200 
+Offering Semester: Semester 1, 2020
+
+
+COMS7507 
+Unit: 2 
+Course Name: Advanced topics in Security 
+Course Type: C 
+Course Link: https://my.uq.edu.au/programs-courses/course.html?course_code=COMS7507&year=2020 
+Prereq: COMS7003 
+Incompatible: COMS4507 
+Offering Semester: Semester 1, 2020
+
+
+COSC7500 
+Unit: 2 
+Course Name: Numerical Methods in Computational Science 
+Course Type: C 
+Course Link: https://my.uq.edu.au/programs-courses/course.html?course_code=COSC7500&year=2020 
+Prereq: None 
+Incompatible: COSC2500 
+Offering Semester: Semester 2, 2019; Semester 2, 2020
+
+
+CSSE4004 
+Unit: 2 
+Course Name: Distributed Computing 
+Course Type: C 
+Course Link: https://my.uq.edu.au/programs-courses/course.html?course_code=CSSE4004&year=2020 
+Prereq: COMP3301 and COMS3200 
+Incompatible: COMP4301 or COMP7301 or CSSE7014 
+Offering Semester: Semester 1, 2020
+
+
+CSSE7001 
+Unit: 2 
+Course Name: The Software Process 
+Course Type: C 
+Course Link: https://my.uq.edu.au/programs-courses/course.html?course_code=CSSE7001&year=2020 
+Prereq: For CSSE3002: prereqs CSSE2002 and DECO2800\nFor CSSE7001: prereqs CSSE7036 or (CSSE7023 and DECO7280) 
+Incompatible: For CSSE3002: inc COMP3500 or COMP7503 or CSSE7001\nFor CSSE7001: inc COMP3500 or COMP7503 or CSSE3002 
+Offering Semester: Semester 1, 2020
+
+
+CSSE4630 
+Unit: 2 
+Course Name: Principles of Program Analysis 
+Course Type: C 
+Course Link: https://my.uq.edu.au/programs-courses/course.html?course_code=CSSE4630&year=2020 
+Prereq: COMP4403 
+Incompatible: CSSE7630 
+Offering Semester: Semester 2, 2020
+
+
+CSSE7100 
+Unit: 2 
+Course Name: Reasoning about Programs 
+Course Type: C 
+Course Link: https://my.uq.edu.au/programs-courses/course.html?course_code=CSSE7100&year=2020 
+Prereq: MATH7861 and CSSE7023 
+Incompatible: None 
+Offering Semester: Semester 1, 2020
+
+
+CSSE7201 
+Unit: 2 
+Course Name: Introduction to Computer Systems 
+Course Type: C 
+Course Link: https://my.uq.edu.au/programs-courses/course.html?course_code=CSSE7201&year=2020 
+Prereq: None 
+Incompatible: COMP1300 or COMP2300 or COMP2302 or CSSE1000 or CSSE2010 or CSSE7035 or ELEC2002 
+Offering Semester: Semester 2, 2019; Semester 1, 2020; Semester 2, 2020
+
+
+CSSE7610 
+Unit: 2 
+Course Name: Concurrency: Theory and Practice 
+Course Type: C 
+Course Link: https://my.uq.edu.au/programs-courses/course.html?course_code=CSSE7610&year=2020 
+Prereq: CSSE2002 or CSSE7023 
+Incompatible: None 
+Offering Semester: Semester 2, 2019; Semester 2, 2020
+
+
+DECO7110 
+Unit: 2 
+Course Name: Design Thinking 
+Course Type: C 
+Course Link: https://my.uq.edu.au/programs-courses/course.html?course_code=DECO7110&year=2020 
+Prereq: None 
+Incompatible: DECO1100 or IENV1000 or IENV1301 or IENV7911 or IENV7913 
+Offering Semester: Semester 1, 2020
+
+
+DECO7220 
+Unit: 2 
+Course Name: Graphic Design 
+Course Type: C 
+Course Link: https://my.uq.edu.au/programs-courses/course.html?course_code=DECO7220&year=2020 
+Prereq: None 
+Incompatible: DECO2200 or MMDS2200 or MMDS7962 or IENV7962 
+Offering Semester: Semester 1, 2020
+
+
+DECO7230 
+Unit: 2 
+Course Name: Digital Prototyping 
+Course Type: C 
+Course Link: https://my.uq.edu.au/programs-courses/course.html?course_code=DECO7230&year=2020 
+Prereq: DECO7250 and CSSE7030 
+Incompatible: DECO2300 or IENV1302 or IENV7964 or MMDS1301 or MMDS1311 or MMDS7923 or MMDS7964 
+Offering Semester: Semester 2, 2019; Semester 2, 2020
+
+
+DECO7280 
+Unit: 2 
+Course Name: Design Computing Studio 2 - Testing & Evaluation 
+Course Type: C 
+Course Link: https://my.uq.edu.au/programs-courses/course.html?course_code=DECO7280&year=2020 
+Prereq: DECO7180 and (CSSE7023 or DECO7250 or INFS7903) 
+Incompatible: CSSE2003 or CSSE7036 or DECO2800 
+Offering Semester: Semester 2, 2019; Semester 2, 2020
+
+
+DECO7350 
+Unit: 2 
+Course Name: Social & Mobile Computing 
+Course Type: C 
+Course Link: https://my.uq.edu.au/programs-courses/course.html?course_code=DECO7350&year=2020 
+Prereq: COMP7904 or DECO7250 
+Incompatible: COMP3505 or COMP7705 or DECO3500 
+Offering Semester: Semester 2, 2019; Semester 2, 2020
+
+
+INFS7202 
+Unit: 2 
+Course Name: Web Information Systems 
+Course Type: C 
+Course Link: https://my.uq.edu.au/programs-courses/course.html?course_code=INFS7202&year=2020 
+Prereq: CSSE7030 and INFS7900 and (MMDS7961 or DECO7140) 
+Incompatible: INFS3202 
+Offering Semester: Semester 1, 2020
+
+
+INFS7203 
+Unit: 2 
+Course Name: Data Mining 
+Course Type: C 
+Course Link: https://my.uq.edu.au/programs-courses/course.html?course_code=INFS7203&year=2020 
+Prereq: None 
+Incompatible: None 
+Offering Semester: Not Offered
+
+
+INFS7205 
+Unit: 2 
+Course Name: Advanced Techniques for High Dimensional Data 
+Course Type: C 
+Course Link: https://my.uq.edu.au/programs-courses/course.html?course_code=INFS7205&year=2020 
+Prereq: INFS7903 
+Incompatible: INFS4200 or INFS4205 or INFS7200 
+Offering Semester: Semester 1, 2020
+
+
+INFS7208 
+Unit: 2 
+Course Name: Cloud Computing 
+Course Type: C 
+Course Link: https://my.uq.edu.au/programs-courses/course.html?course_code=INFS7208&year=2020 
+Prereq: CSSE7030 and INFS7900 
+Incompatible: INFS3204 or INFS7204 or INFS3208 
+Offering Semester: Semester 2, 2019; Semester 2, 2020
+
+
+INFS7410 
+Unit: 2 
+Course Name: Information Retrieval and Web Search 
+Course Type: C 
+Course Link: https://my.uq.edu.au/programs-courses/course.html?course_code=INFS7410&year=2020 
+Prereq: INFS2200 or INFS7903 
+Incompatible: None 
+Offering Semester: Semester 2, 2019; Semester 2, 2020
+
+
+INFS7450 
+Unit: 2 
+Course Name: Social Media Analytics 
+Course Type: C 
+Course Link: https://my.uq.edu.au/programs-courses/course.html?course_code=INFS7450&year=2020 
+Prereq: COMP7505 and STAT7003 and INFS7203 
+Incompatible: None 
+Offering Semester: Semester 1, 2020
+
+
+INFS7907 
+Unit: 2 
+Course Name: Advanced Database Systems 
+Course Type: C 
+Course Link: https://my.uq.edu.au/programs-courses/course.html?course_code=INFS7907&year=2020 
+Prereq: INFS7903 or INFS7901 
+Incompatible: INFS3200 
+Offering Semester: Semester 2, 2019; Semester 1, 2020; Semester 2, 2020
+
+
+COMP7000 
+Unit: 2 
+Course Name: Special Topics in Computer Science 7A 
+Course Type: C 
+Course Link: https://my.uq.edu.au/programs-courses/course.html?course_code=COMP7000&year=2020 
+Prereq: Permission of Head of School 
+Incompatible: None 
+Offering Semester: Semester 2, 2019; Semester 1, 2020; Semester 2, 2020
+
+
+COMP7001 
+Unit: 2 
+Course Name: Special Topics in Computer Science 7B 
+Course Type: C 
+Course Link: https://my.uq.edu.au/programs-courses/course.html?course_code=COMP7001&year=2020 
+Prereq: Permission of Head of School 
+Incompatible: None 
+Offering Semester: Semester 2, 2019; Semester 1, 2020; Semester 2, 2020
+
+
+CSSE7080 
+Unit: 2 
+Course Name: Advanced Topics in Computer Systems A 
+Course Type: C 
+Course Link: https://my.uq.edu.au/programs-courses/course.html?course_code=CSSE7080&year=2020 
+Prereq: None 
+Incompatible: None 
+Offering Semester: Semester 2, 2019
+
+
+CSSE7081 
+Unit: 2 
+Course Name: Advanced Topics in Computer Systems B 
+Course Type: C 
+Course Link: https://my.uq.edu.au/programs-courses/course.html?course_code=CSSE7081&year=2020 
+Prereq: Permission of Head of School 
+Incompatible: None 
+Offering Semester: Semester 2, 2019
+
+
+CSSE7090 
+Unit: 2 
+Course Name: Advanced Topics in Software Engineering A 
+Course Type: C 
+Course Link: https://my.uq.edu.au/programs-courses/course.html?course_code=CSSE7090&year=2020 
+Prereq: Permission of Head of School 
+Incompatible: None 
+Offering Semester: Semester 2, 2019
+
+
+CSSE7091 
+Unit: 2 
+Course Name: Advanced Topics in Software Engineering B 
+Course Type: C 
+Course Link: https://my.uq.edu.au/programs-courses/course.html?course_code=CSSE7091&year=2020 
+Prereq: Permission of Head of School 
+Incompatible: None 
+Offering Semester: Semester 2, 2019
+
+
+DECO7000 
+Unit: 2 
+Course Name: Special Topics in Design Computing 7A 
+Course Type: C 
+Course Link: https://my.uq.edu.au/programs-courses/course.html?course_code=DECO7000&year=2020 
+Prereq: Permission of Head of School 
+Incompatible: None 
+Offering Semester: Semester 2, 2019
+
+
+DECO7001 
+Unit: 2 
+Course Name: Special Topics in Design Computing 7B 
+Course Type: C 
+Course Link: https://my.uq.edu.au/programs-courses/course.html?course_code=DECO7001&year=2020 
+Prereq: Permission of Head of School 
+Incompatible: None 
+Offering Semester: Semester 2, 2019
+
+
+DECO7002 
+Unit: 2 
+Course Name: Special Topics in Design Computing 7C 
+Course Type: C 
+Course Link: https://my.uq.edu.au/programs-courses/course.html?course_code=DECO7002&year=2020 
+Prereq: None 
+Incompatible: None 
+Offering Semester: Semester 2, 2019
+
+
+DECO7003 
+Unit: 2 
+Course Name: Special Topics in Design Computing 7D 
+Course Type: C 
+Course Link: https://my.uq.edu.au/programs-courses/course.html?course_code=DECO7003&year=2020 
+Prereq: None 
+Incompatible: None 
+Offering Semester: Semester 2, 2019
+
+
+INFS7206 
+Unit: 2 
+Course Name: Advanced Topics in Database 
+Course Type: C 
+Course Link: https://my.uq.edu.au/programs-courses/course.html?course_code=INFS7206&year=2020 
+Prereq: INFS7903 
+Incompatible: INFS4206 
+Offering Semester: Not Offered
+
+
+BIOT7033 
+Unit: 2 
+Course Name: Issues in Biotechnology 
+Course Type: D 
+Course Link: https://my.uq.edu.au/programs-courses/course.html?course_code=BIOT7033&year=2020 
+Prereq: None 
+Incompatible: BIOT3001 or BIOT2002 or BIOT6006 
+Offering Semester: Semester 2, 2019; Semester 2, 2020
+
+
+BISM7208 
+Unit: 2 
+Course Name: Information Systems Strategy and Sourcing 
+Course Type: D 
+Course Link: https://my.uq.edu.au/programs-courses/course.html?course_code=BISM7208&year=2020 
+Prereq: BISM7233 or BISM7255 or INFS7211 or 7233 or 7255 
+Incompatible: BISM3208 or MGTS3208 or MGTS7208 
+Offering Semester: Semester 2, 2019; Semester 2, 2020
+
+
+BISM7221 
+Unit: 2 
+Course Name: Information Systems Control, Governance and Audit 
+Course Type: D 
+Course Link: https://my.uq.edu.au/programs-courses/course.html?course_code=BISM7221&year=2020 
+Prereq: ACCT7209 or BISM7209 or (ACCT7101 + (BISM7202 or MGTS7202)) 
+Incompatible: INFS7000 or 7221 
+Offering Semester: Semester 1, 2020
+
+
+BISM7233 
+Unit: 2 
+Course Name: Data Analytics for Business 
+Course Type: D 
+Course Link: https://my.uq.edu.au/programs-courses/course.html?course_code=BISM7233&year=2020 
+Prereq: BISM7206 or MGTS7206 
+Incompatible: BISM2202 or MGTS2202 or INFS7233 
+Offering Semester: Semester 2, 2019; Semester 2, 2020
+
+
+CSSE7306 
+Unit: 4 
+Course Name: Special Projects in Computer Systems and Software Engineering 
+Course Type: D 
+Course Link: https://my.uq.edu.au/programs-courses/course.html?course_code=CSSE7306&year=2020 
+Prereq: Permission Head of School 
+Incompatible: CSSE3006 
+Offering Semester: Semester 2, 2019; Semester 1, 2020; Semester 2, 2020
+
+
+GEOM7004 
+Unit: 2 
+Course Name: Geospatial Processing and Web Mapping 
+Course Type: D 
+Course Link: https://my.uq.edu.au/programs-courses/course.html?course_code=GEOM7004&year=2020 
+Prereq: GEOM7005, GEOM2001 or GEOM2002 
+Incompatible: GEOM3005 
+Offering Semester: Semester 2, 2019; Semester 2, 2019; Semester 2, 2020; Semester 2, 2020
+
+
+GEOM7005 
+Unit: 2 
+Course Name: Geographical Information Systems 
+Course Type: D 
+Course Link: https://my.uq.edu.au/programs-courses/course.html?course_code=GEOM7005&year=2020 
+Prereq: None 
+Incompatible: GEOM2001 or 2002 or 7006 or GEOS2300 or 7300 
+Offering Semester: Summer Semester, 2019; Semester 1, 2020; Semester 1, 2020
+
+
+HLTH7001 
+Unit: 2 
+Course Name: Introduction to Digital Health 
+Course Type: D 
+Course Link: https://my.uq.edu.au/programs-courses/course.html?course_code=HLTH7001&year=2020 
+Prereq: None 
+Incompatible: None 
+Offering Semester: Semester 2, 2019; Semester 1, 2020; Semester 2, 2020
+
+
+HLTH7002 
+Unit: 2 
+Course Name: Digital Health in Clinical Practice 
+Course Type: D 
+Course Link: https://my.uq.edu.au/programs-courses/course.html?course_code=HLTH7002&year=2020 
+Prereq: None 
+Incompatible: None 
+Offering Semester: Semester 2, 2019; Semester 1, 2020; Semester 2, 2020
+
+
+MATH7134 
+Unit: 2 
+Course Name: Mathematical Biology 
+Course Type: D 
+Course Link: https://my.uq.edu.au/programs-courses/course.html?course_code=MATH7134&year=2020 
+Prereq: MATH1052 + [MATH2100 or MATH7100] + Permission of Head of School 
+Incompatible: MATH3104 
+Offering Semester: Semester 1, 2020
+
+
+MGTS7601 
+Unit: 2 
+Course Name: Managing Organisational Behaviour 
+Course Type: D 
+Course Link: https://my.uq.edu.au/programs-courses/course.html?course_code=MGTS7601&year=2020 
+Prereq: None 
+Incompatible: MGTS1601 
+Offering Semester: Semester 2, 2019; Semester 1, 2020; Semester 2, 2020
+
+
+TIMS7301 
+Unit: 2 
+Course Name: Principles of Entrepreneurship 
+Course Type: D 
+Course Link: https://my.uq.edu.au/programs-courses/course.html?course_code=TIMS7301&year=2020 
+Prereq: None 
+Incompatible: MEBS7116 or TIMS3302 
+Offering Semester: Semester 2, 2019; Semester 1, 2020; Semester 2, 2020
+
+
+TIMS7328 
+Unit: 2 
+Course Name: Strategies for Business Sustainability and Innovation 
+Course Type: D 
+Course Link: https://my.uq.edu.au/programs-courses/course.html?course_code=TIMS7328&year=2020 
+Prereq: None 
+Incompatible: None 
+Offering Semester: Semester 2, 2019; Semester 2, 2020
+>>> 
