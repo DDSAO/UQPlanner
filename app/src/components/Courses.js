@@ -52,20 +52,17 @@ class Courses extends React.Component {
     render() {
         const { coursesDict } = this.context;
         var parts=[]
-        console.log(coursesDict)
         if (coursesDict != undefined) {
 
             parts = Object.entries(coursesDict).map((obj,idx)=>{
                 let shouldHide = 'true';
             
-            if (idx === this.state.currentPartIndex) {
-                shouldHide = 'false'
+                if (idx === this.state.currentPartIndex) {
+                    shouldHide = 'false'
+                } 
+                return <Part shouldHide={shouldHide} key={idx} id={obj[0]} courses={obj[1]} />
+                });
             } 
-    
-            return <Part shouldHide={shouldHide} key={idx} id={obj[0]} courses={obj[1]} />
-            });
-
-        } 
         
         return (
             

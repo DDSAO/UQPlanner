@@ -45,14 +45,7 @@ class Part extends React.Component {
                     {provided=>(
                         <div ref={provided.innerRef} {...provided.droppableProps} style={flexStyle}>
                             {this.props.courses.map((obj,idx)=> (
-                                <Draggable key={obj.code} draggableId={obj.code} index={idx}>
-                                    {(provided)=>(
-                                        <div {...provided.draggableProps} {...provided.dragHandleProps} ref={provided.innerRef} >
-                                            <Course code={obj.code} name={obj.name} info={obj}/>
-                                        </div>
-                                    )}    
-                                </Draggable>
-                            
+                                <Course key={obj.code} idx={idx} info={obj} />
                             ))}
                             {provided.placeholder}
                         </div>
@@ -65,3 +58,12 @@ class Part extends React.Component {
 }
 
 export default Part;
+/*
+<Draggable key={obj.code} draggableId={obj.code} index={idx}>
+                                    {(provided,snapshot)=>(
+                                        <div {...provided.draggableProps} {...provided.dragHandleProps} ref={provided.innerRef} >
+                                            <Course code={obj.code} name={obj.name} info={obj}/>
+                                        </div>
+                                    )}    
+                                </Draggable>
+*/

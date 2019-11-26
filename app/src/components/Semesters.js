@@ -19,15 +19,11 @@ class Semesters extends React.Component {
         }
         var semesters = []
         if (Object.entries(this.context.semestersDict) != 0) {
-            console.log(this.context.semestersDict)
             semesters = Object.entries(this.context.semestersDict).map((obj,idx)=>{
-                console.log(obj)
-                return <Semester key={idx} semesterIndex={obj[0]} courses={obj[1]} />
+                return <Semester key={idx} semesterIndex={obj[0]} courses={obj[1]} canSelect={this.context.canSelect.includes(obj[0])} />
             })
         } 
         
-        
-
         return (
             <div style={style}>
                 {semesters}

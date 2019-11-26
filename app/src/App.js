@@ -13,6 +13,8 @@ import Semesters from './components/Semesters'
 
 const Provider = CourseContext.Provider;
 
+const checkValid = RegExp(/^(Semester\s)\d,\s\d+/)
+
 
 class App extends  React.Component  {
   constructor() {
@@ -20,6 +22,8 @@ class App extends  React.Component  {
     this.state = {
       coursesDict: {},
       semestersDict:{},
+      status:[],
+      canSelect:[],
     }
   }
   
@@ -34,11 +38,12 @@ class App extends  React.Component  {
         return response.json();
     })
     .then(function(courses) {
-        var coursesDict = {}
+        var coursesDict = {}, status = [];
         courses.forEach(element => {
 
             if (! Object.keys(coursesDict).includes(element.type)) {
                 coursesDict[element.type] = [element]
+                status.push({part:element.type,required:'?',obtained:0})
             } else {
                 coursesDict[element.type].push(element)
             }
@@ -47,49 +52,77 @@ class App extends  React.Component  {
         thisClass.setState({
             parts: Object.keys(coursesDict),
             coursesDict:coursesDict,
-            semestersDict:{'1-2020':[],'2-2020':[],'1-2021':[],'2-2021':[]},
-            semestersArray: Object.keys({'1-2020':{},'2-2020':{},'1-2021':{},'2-2021':{}})
+            semestersDict:{'2-2019':[],'1-2020':[],'2-2020':[],'1-2021':[]},
+            semestersArray: Object.keys({'2-2019':[],'1-2020':[],'2-2020':[],'1-2021':[]}),
+            status:status,
         })
         
         
     })
 
   }
+  onDragStart = result => {
+    const {source} = result;
+    let course =  this.state.coursesDict[source.droppableId][source.index];
+    let courseSem = course.semester.split(';');
+    
+    let availableParts = []
+    courseSem.forEach((element)=>{
+      if (element.match(checkValid)) {
+        availableParts.push(element[9]+'-'+element.slice(12,16))
+      } else {
+        console.log(element+' is not valid semester format')
+      }
+    })
+    this.setState({canSelect:availableParts})
 
+  }
   onDragEnd = result => {
     const {destination, source, draggableId} = result;
+    console.log(result)
     if (! destination || destination.droppableId === source.droppableId) {
+      this.setState({canSelect:[]})
       return;
     } 
-    const oldSemesters = this.state.semestersDict;
-    const oldCourses = this.state.coursesDict;
-    
-    const newSemesterInPart = Array.from(oldSemesters[destination.droppableId])
-    const newCoursesInPart = Array.from(oldCourses[source.droppableId])
-    newSemesterInPart.push(newCoursesInPart[source.index])//add to semester
-    newCoursesInPart.splice(source.index,1)//remove it from courses
+    if (source.droppableId.includes(' ')) {
+      const oldSemesters = this.state.semestersDict;
+      const oldCourses = this.state.coursesDict;
+      const status = this.state.status;
+      
+      const newSemesterInPart = Array.from(oldSemesters[destination.droppableId])
+      const newCoursesInPart = Array.from(oldCourses[source.droppableId])
+      newSemesterInPart.push(newCoursesInPart[source.index])//add to semester
+      //add unit to status
+      for (let i = 0; i < status.length; i++) {
+        if (status[i].part === source.droppableId) {
+          status[i].obtained += newCoursesInPart[source.index].unit 
+        }
+      }
+      newCoursesInPart.splice(source.index,1)//remove it from courses
 
-    const newSemesters = {
-      ...oldSemesters,
-      [destination.droppableId]:newSemesterInPart,
+      const newSemesters = {
+        ...oldSemesters,
+        [destination.droppableId]:newSemesterInPart,
+      }
+      const newCourses = {
+        ...oldCourses,
+        [source.droppableId]:newCoursesInPart
+      }
+      this.setState({
+        coursesDict:newCourses,
+        semestersDict:newSemesters,
+        status:status,
+        canSelect:[],
+      })
     }
-    const newCourses = {
-      ...oldCourses,
-      [source.droppableId]:newCoursesInPart
-    }
-    this.setState({
-      coursesDict:newCourses,
-      semestersDict:newSemesters,
-    })
     
     
-   
   }
 
 
   render() {
     return (
-      <DragDropContext onDragEnd={this.onDragEnd}>
+      <DragDropContext onDragEnd={this.onDragEnd} onDragStart={this.onDragStart}>
         <Provider value={this.state}>
           <Status />
           <Semesters />

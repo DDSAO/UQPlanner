@@ -1,7 +1,10 @@
 import React from 'react';
 import StatusCard from './StatusCard'
+import CourseContext from '../context'
 
 class Status extends React.Component {
+    static contextType = CourseContext;
+
     constructor(props) {
         super(props);
 
@@ -17,10 +20,12 @@ class Status extends React.Component {
             minHeight:'50px',
             width:'100%'
         }
+        const status = this.context.status.map((obj,idx)=>{
+            return (<StatusCard key={idx} name={obj.part} obtained={obj.obtained} required={obj.required} />)
+        })
         return (
             <div style={style}>
-                <StatusCard name='PartA' obtained='0' required='12' />
-                <StatusCard name='PartB' obtained='0' required='8' />
+                {status}
             </div>
         )
     }

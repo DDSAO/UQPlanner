@@ -3,16 +3,13 @@ import SemesterTitle from './SemesterTitle';
 import SemesterCard from './SemesterCard';
 import {Droppable} from 'react-beautiful-dnd';
 
-
-
-
-
 class Semester extends React.Component {
 
 
     render() {
+        let borderColor = 'black';
         const style={
-            backgroundColor:'#5511aa',
+            backgroundColor:this.props.canSelect ? 'green' : '#5511aa',
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
@@ -20,7 +17,9 @@ class Semester extends React.Component {
             height: '90%',
             width:'20%',
             minWidth:'200px',
-            border:'2px solid black',
+            border:'2px solid',
+            //borderColor: this.props.canSelect ? 'black' :'black',
+            //borderWidth: this.props.canSelect ? '4px' :'2px',
             borderRadius:'20px'
         }
         const placeholderStyle={
@@ -31,8 +30,7 @@ class Semester extends React.Component {
             height:'100%',
             width:'100%'
         }
-        console.log(this.props.courses)
-        const courses = this.props.courses.map((obj,idx)=>(<SemesterCard key={idx} code={obj.code} name={obj.name} />))
+        const courses = this.props.courses.map((obj,idx)=>(<SemesterCard key={idx} info={obj} />))
         return (
             <div style={style}>
                 <SemesterTitle name={ 'Semester ' + String(this.props.semesterIndex)}/>
@@ -43,7 +41,6 @@ class Semester extends React.Component {
                         {provided.placeholder}
                         </div>
                     )}
-
                 </Droppable>
                 
             </div>

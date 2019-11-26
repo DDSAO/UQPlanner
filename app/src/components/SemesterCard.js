@@ -25,10 +25,10 @@ class SemesterCard extends React.Component {
             
             <div style={style}>
                 <div style={codeStyle}>
-                    <strong>{this.props.code}</strong>
+                    <strong>{this.props.info.code}</strong>
                 </div>
                 <div style={nameStyle}>
-                    <i>{this.props.name}</i>
+                    <i>{this.props.info.name}</i>
                 </div>
             </div>
         )
