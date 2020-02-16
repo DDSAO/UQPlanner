@@ -52,7 +52,7 @@ class Courses extends React.Component {
     render() {
         const { coursesDict } = this.context;
         var parts=[]
-        if (coursesDict != undefined) {
+        if (coursesDict !== undefined) {
 
             parts = Object.entries(coursesDict).map((obj,idx)=>{
                 let shouldHide = 'true';
@@ -67,9 +67,9 @@ class Courses extends React.Component {
         return (
             
             <div style={this.state.style}>
-                <Arrow background='red' onClick={this.rowBack}/>  
+                <Arrow direction='left' onClick={this.rowBack}/>  
                 {parts}
-                <Arrow background='green' onClick={this.rowForward}/>
+                <Arrow direction='right' onClick={this.rowForward}/>
             </div>
         )
     }

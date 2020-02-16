@@ -1,16 +1,44 @@
 import React from 'react';
 import Course from './Course';
-import {Droppable,Draggable} from 'react-beautiful-dnd';
+import {Droppable} from 'react-beautiful-dnd';
 import styled from 'styled-components';
 
-const Container = styled.div``;
 
 class Part extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {display:'none'}
+        this.state = {
+            display:'none',
+            basedCourses:this.props.courses,
+            displayingCourses:this.props.courses,
+            searching:false
+        }
+        this.onChange = this.onChange.bind(this)
     }
-
+    onChange(e){
+        if (e.target.value.length > 0) {
+            this.setState({searching:true})
+        } else {
+            this.setState({searching:false})
+        }
+        
+        let input = new RegExp(e.target.value,'i')
+        let shouldDisplay = []
+        this.context.courses.map((obj)=> {
+            if (input.test(obj.name)||input.test(obj.code)) {
+                shouldDisplay.push(obj)
+            } 
+        })
+        
+        this.setState({displayingCourses:shouldDisplay})
+    }
+    shouldComponentUpdate(nextProps, nextState){
+        if (this.props.courses.length !== nextProps.courses.length){
+            this.setState({displayingCourses:nextProps.courses})
+        }
+        
+        return true
+    }
     render() {
         const style={
             backgroundColor:'#5511aa',
@@ -19,20 +47,29 @@ class Part extends React.Component {
             width:'90%',
             border:'2px black solid',
             display: this.props.shouldHide === 'false' ? 'block' : 'none',
-            overflow:'scroll',
         }
         const titleStyle={
+            display:'flex',
+            flexDirection:'row',
+            alignItems:'center',
+            justifyContent:'space-between',
             width:'100%',
+            height:'10%',
             borderBottom:'3px solid white',
         }
         const titleLineStyle = {
             paddingLeft: '20px'
         }
         const flexStyle = {
-            display:'flex',
+            height:'89%',
             flexWrap: 'wrap',
+            overflow:'scroll'
         }
- 
+        /*
+        if ( this.state.basedCourses.length != this.props.courses.length) {
+            this.setState({basedCourses:this.props.courses})
+        }
+        */
         return (
             
             <div style={style}>
@@ -40,19 +77,24 @@ class Part extends React.Component {
                     <h3 style={titleLineStyle}>
                         {this.props.id}
                     </h3>
+                    <div style={{marginRight:'20px'}}>
+                        <input type='text' onChange={this.onChange} placeholder={'search'}></input>
+                    </div>
+                    
                 </div>
                 <Droppable droppableId={this.props.id}>
                     {provided=>(
                         <div ref={provided.innerRef} {...provided.droppableProps} style={flexStyle}>
-                            {this.props.courses.map((obj,idx)=> (
+                            {this.state.displayingCourses.map((obj,idx)=> (
                                 <Course key={obj.code} idx={idx} info={obj} />
                             ))}
                             {provided.placeholder}
                         </div>
                     )}
                 </Droppable>
-               
             </div>
+                
+               
         )
     }
 }

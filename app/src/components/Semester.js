@@ -7,7 +7,6 @@ class Semester extends React.Component {
 
 
     render() {
-        let borderColor = 'black';
         const style={
             backgroundColor:this.props.canSelect ? 'green' : '#5511aa',
             display: 'flex',
@@ -26,11 +25,11 @@ class Semester extends React.Component {
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
-            justifyContent:'center',
+            justifyContent:'center', 
             height:'100%',
             width:'100%'
         }
-        const courses = this.props.courses.map((obj,idx)=>(<SemesterCard key={idx} info={obj} />))
+        const courses = this.props.courses.map((obj,idx)=>(<SemesterCard semesterIndex={this.props.semesterIndex} key={idx} info={obj} delect={this.props.delect} />))
         return (
             <div style={style}>
                 <SemesterTitle name={ 'Semester ' + String(this.props.semesterIndex)}/>

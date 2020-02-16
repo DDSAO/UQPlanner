@@ -40,28 +40,9 @@
     visibility:visible;
   }
   .course {
-    display:inline-block;
-    background-color:tomato;
-    padding:0 10px;
-    margin: 5px 10px;
-    border-radius:10px;
-    box-shadow: 5px 5px 5px grey;
-    height:50px;
-    transition:1s;
+    
   }
-  .course:hover{
-    height:200px;
-  }
-  .course:hover .courseDetail {
-    border-top: 2px solid black;
-    opacity:1;
-    transition: 0.5s;
-    transition-delay: 0.5s;
-  }
-  .courseDetail {
-    position:absolute;
-    opacity:0;
-  }
+
  
 
 

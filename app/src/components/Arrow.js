@@ -1,20 +1,22 @@
 import React from 'react'
 
 class Arrow extends React.Component {
-    constructor(props) {
-        super(props)
-        
-    }
+
     render() {
         const style={
             width:'40px',
-            height:'40px',
+            height:'80%',
             margin:'10px',
-            background: this.props.background
+            padding:'auto',
+            background:'lightgrey',
+            display:'flex',
+            justifyContent:'center',
+            alignItems:'center'
         };
+        
         return (
             <div onClick={this.props.onClick} style={style}>
-
+                <h1>{this.props.direction==='left'?'⬅️':'➡️'}</h1>
             </div>
         )
        

@@ -45,7 +45,6 @@ class Course extends React.Component {
             borderRadius:'10px',
             boxShadow: '5px 5px 5px grey',
             backgroundColor: props => (props.isdragging ? 'black' :'tomato'),
-
         }
         return (
             <Draggable key={this.props.info.code} draggableId={this.props.info.code} index={this.props.idx}>

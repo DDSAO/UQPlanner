@@ -6,6 +6,10 @@ import CourseContext from '../context'
 class Semesters extends React.Component {
     static contextType = CourseContext;
 
+    delect(info,semester) {
+    
+        this.context.delect(info,semester)
+    }
     render() {
         //const { semestersDict } = this.context;
         const style={
@@ -18,9 +22,9 @@ class Semesters extends React.Component {
             width:'100%'
         }
         var semesters = []
-        if (Object.entries(this.context.semestersDict) != 0) {
+        if (Object.entries(this.context.semestersDict) !== 0) {
             semesters = Object.entries(this.context.semestersDict).map((obj,idx)=>{
-                return <Semester key={idx} semesterIndex={obj[0]} courses={obj[1]} canSelect={this.context.canSelect.includes(obj[0])} />
+                return <Semester delect={this.delect.bind(this)} key={idx} semesterIndex={obj[0]} courses={obj[1]} canSelect={this.context.canSelect.includes(obj[0])} />
             })
         } 
         
